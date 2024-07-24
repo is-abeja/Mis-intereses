@@ -1,63 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Contacto y Registro</title>
+    <link rel="stylesheet" href="contacto.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <a href="https://tecnolochicas.mx/" target="_blank">
-            <img id=logo width=700 src="https://tecnolochicas.mx/public/images/tecnolochicas-logo.png"
-                alt="logo imagen tecno">
-        </a>
+        <h1>¡Registrate para seguir recibiendo el top musical de la semana!</h1>
     </header>
 
-    <mean>
-        <h1>Contacto</h1>
-        <form action="">
-            <div>
-                <label for="name">Nombre completo:</label>
-                <input id="nombre" name="nombre" placeholder="Maria Ramirez Hernandez" required type="text">
-            </div>
+    <main>
+        <section class="contact-form">
+            <h3>Información de contacto</h3>
+            <form id="contactForm">
 
-            <div>
-                <label for="email">Correo electrónico:</label>
-                <input id="email" placeholder="mariarh@gmail.com" required type="email">
-                <label for="text">Número de teléfono:</label>
-                <input type="text" name="number" id="telefono" placeholder="+52 222 222 2222" >
-            </div>
+                <div>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name"  placeholder="Maria Ramirez Hernandez" required>
+                </div>
 
-            <div>
-                <label for="date">Fecha de nacimiento:</label>
-                <input id="nacimiento" required type="date">
-            </div>
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" placeholder="mariarh@gmail.com" name="email" required>
+                </div>
 
-            <div>
-                <label for="epoca-favorita">Estación favorita del año:</label>
-                <input list="estaciones" id="epoca-favorita" name="epoca-favorita">
-                <datalist id="estaciones">
-                    <option value="Primavera">
-                    <option value="Verano">
-                    <option value="Otoño">
-                    <option value="Invierno">
-                </datalist>
-            </div>
-        </form>
-    </mean>
+                <div>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" placeholder="********" name="password" required>
+                </div>
 
-    <footer>
-        <h5>Hecho por Isabel <b>tecnolochicaspro</b>.</h5>
-        <h5>Gracias por contactarnos</h5>
-        <h6>
-            <a href="index.html">Página principal</a>
-        </h6>
-    </footer>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
 
+        <section class="survey-form">
+
+            <h2>Me gustaria conocerte un poco mas...</h2>
+
+            <form id="surveyForm">
+
+                <div>
+                    <label for="regName">¿Cómo te gustaría que te llame?</label>
+                    <input type="text" id="regName" name="regName" required>
+                </div>
+
+                <div>
+                    <label for="likedPage">¿Te gustó la página?</label>
+                    <select id="likedPage" name="likedPage" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="yes">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="favSong">¿Te gustó alguna canción en particular?</label>
+                    <input type="text" id="favSong" name="favSong">
+                </div>
+
+                <div>
+                    <label for="recommend">¿Recomendarías la página?</label>
+                    <select id="recommend" name="recommend" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="yes">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="suggestion">¿Qué canción te gustaría recomendarme?</label>
+                    <input type="text" id="suggestion" name="suggestion">
+                </div>
+
+                <button type="submit">Enviar Encuesta</button>
+            </form>
+        </section>
+    </main>
 </body>
+
+<footer>
+    <h5>Hecho por Isabel <b>tecnolochicaspro</b>.</h5>
+    <h5>Gracias por contactarnos</h5>
+    <h6>
+        <a href="index.html">Página principal</a>
+    </h6>
+</footer>
 
 </html>
