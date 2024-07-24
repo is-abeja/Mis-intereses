@@ -1,0 +1,145 @@
+/* style.css */
+
+body {
+        font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0e1;
+    color: #292828;
+}
+
+/* Estilos Generales */
+body {
+    font-family: 'Mukta', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+    
+header {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.introduction {
+    text-align: center;
+    margin: 10px;
+}
+
+.calendar-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.calendar-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.calendar {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.calendar th, .calendar td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.calendar th {
+    background-color: #b1c0bf;
+}
+
+
+.calendar .highlight-week {
+    background-color: #f4f5a4; /* Color de fondo para resaltar la semana */
+    font-weight: bold; /* Opcional: hacer el texto más oscuro o en negrita */
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap; /* Permite el ajuste de líneas si es necesario */
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: block;
+    padding: 10px;
+    background-color: #60608b;
+    color: #ffffff; 
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-align: center;
+    flex: 1;
+    margin: 0 5px; /* Espacio entre los botones */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+label:hover {
+    background-color: #ccc;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+input#tab1:checked ~ #content1,
+input#tab2:checked ~ #content2,
+input#tab3:checked ~ #content3,
+input#tab4:checked ~ #content4,
+input#tab5:checked ~ #content5,
+input#tab6:checked ~ #content6,
+input#tab7:checked ~ #content7,
+input#tab8:checked ~ #content8 {
+    display: block;
+}
+
+input#tab1:checked + label[for="tab1"],
+input#tab2:checked + label[for="tab2"],
+input#tab3:checked + label[for="tab3"],
+input#tab4:checked + label[for="tab4"],
+input#tab5:checked + label[for="tab5"],
+input#tab6:checked + label[for="tab6"],
+input#tab7:checked + label[for="tab7"],
+input#tab8:checked + label[for="tab8"] {
+}
+
+.video {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+}
+
+.video-container {
+    text-align: center; /* Centra horizontalmente el contenido en el contenedor */
+}
+
+.justify-text {
+    text-align: justify;
+}
