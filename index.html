@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi música favorita de la semana</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <h1>Mi música favorita de esta semana</h1>
+    <div class="introduction">
+        <p>Hola, espero te encante mi página de música favorita de la semana. Aquí encontrarás canciones que no dejo de
+            repetir una y otra vez. ¡Espero que las disfrutes tanto como yo!</p>
+    </div>
+
+    <div class="calendar-container">
+        <div class="calendar">
+            <div class="day">L</div>
+            <div class="day">M</div>
+            <div class="day">M</div>
+            <div class="day">J</div>
+            <div class="day">V</div>
+            <div class="day">S</div>
+            <div class="day">D</div>
+            <div class="day current-week">15</div>
+            <div class="day current-week">16</div>
+            <div class="day current-week">17</div>
+            <div class="day current-week">18</div>
+            <div class="day current-week">19</div>
+            <div class="day current-week">20</div>
+            <div class="day current-week">21</div>
+        </div>
+    </div>
+
+    <div class="tab-container">
+        <div class="tabs">
+            <button class="tab-link" onclick="openDay(event, 'Lunes')" id="defaultOpen">Lunes</button>
+            <button class="tab-link" onclick="openDay(event, 'Martes')">Martes</button>
+            <button class="tab-link" onclick="openDay(event, 'Miércoles')">Miércoles</button>
+            <button class="tab-link" onclick="openDay(event, 'Jueves')">Jueves</button>
+            <button class="tab-link" onclick="openDay(event, 'Viernes')">Viernes</button>
+            <button class="tab-link" onclick="openDay(event, 'Sábado')">Sábado</button>
+            <button class="tab-link" onclick="openDay(event, 'Domingo')">Domingo</button>
+        </div>
+
+        <div id="Lunes" class="tab-content">
+            <h2>Lunes - 15 de julio de 2024</h2>
+            <p><strong>Título:</strong> Skin and Bones</p>
+            <p><strong>Autor:</strong> David Kushner</p>
+            <p><strong>Dato curioso:</strong> "Skin and Bones" es una canción profundamente personal para David Kushner.
+                La escribió durante un período de introspección y explora temas de vulnerabilidad y resiliencia. Kushner
+                ha mencionado en entrevistas que la canción refleja sus luchas internas y su viaje hacia la
+                autoaceptación.</p>
+            <iframe class="video" src="https://www.youtube.com/embed/Mo5hVnLf3yg" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+
+
+        <div id="Martes" class="tab-content">
+            <h2>Martes - 16 de julio de 2024</h2>
+            <p><strong>Título:</strong> Where Is My Mind?</p>
+            <p><strong>Autor:</strong> Pixies</p>
+            <p><strong>Dato Curioso:</strong> La letra de "Where Is My Mind?" está inspirada en una experiencia que el
+                cantante y compositor Black Francis (también conocido como Frank Black) tuvo mientras estaba en la
+                República Dominicana. En una entrevista, mencionó que la canción fue inspirada por su experiencia de
+                buceo en el Caribe, donde se sentía desorientado y perdido. La sensación de confusión y desubicación que
+                experimentó durante ese viaje influyó en la letra surrealista y evocadora de la canción.</p>
+            <iframe class="video" src="https://www.youtube.com/embed/OJ62RzJkYUo">frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+
+
+        <div id="Miércoles" class="tab-content">
+            <h2>Miércoles - 17 de julio de 2024</h2>
+            <p><strong>Título:</strong> lo que un día fue</p>
+            <p><strong>Autor:</strong> Paloma Morphy</p>
+            <p><strong>Dato Curioso:</strong> Paloma Morphy es conocida por su estilo pop melódico y sus letras
+                introspectivas. Su música a menudo explora temas de amor, auto-reflexión y experiencias personales.
+                Además, ha colaborado con otros artistas y productores en la escena musical española, lo que ha
+                contribuido a su reconocimiento en el ámbito local.</p>
+            <iframe class="video" src="https://www.youtube.com/embed/sHZsFNjNYn4"></iframe>
+        </div>
+
+        <div id="Jueves" class="tab-content">
+            <h2>Jueves - 18 de julio de 2024</h2>
+            <p><strong>Título:</strong> Hate you</p>
+            <p><strong>Autor:</strong> Jung Kook</p>
+            <p><strong>Dato Curioso:</strong> Jungkook explora el complejo tema de los sentimientos contradictorios que
+                uno puede tener hacia alguien. La canción refleja la ambivalencia que puede surgir en una relación donde
+                el odio y el amor están entrelazados. A través de sus letras y su interpretación vocal, Jungkook
+                transmite la lucha interna y el conflicto emocional de tener sentimientos intensos y encontrados hacia
+                otra persona.</p>
+            <iframe class="video" src="https://www.youtube.com/embed/tAcKfnf0zv4"></iframe>
+        </div>
+
+        <div id="Viernes" class="tab-content">
+            <h2>Viernes - 19 de julio de 2024</h2>
+            <p><strong>Título:</strong> Ojos Noche</p>
+            <p><strong>Autor:</strong> Elsa y Mar</p>
+            <p><strong>Dato Curioso:</strong> Elsa y Elmar se caracteriza por su estilo único que combina elementos de
+                pop, folk y música electrónica. Su enfoque innovador y su habilidad para mezclar géneros les ha
+                permitido destacarse en la escena musical española y latinoamericana. La banda también es conocida por
+                sus letras poéticas y emotivas, que a menudo exploran temas de amor, identidad y auto-reflexión.</p>
+            <iframe class="video" src="https://www.youtube.com/embed/j3Idam5UjDY"></iframe>
+        </div>
+
+        <div id="Sábado" class="tab-content">
+            <h2>Sábado - 20de julio de 2024</h2>
+            <p><strong>Título:</strong> Pandora´s Box</p>
+            <p><strong>Autor:</strong> j-hope</p>
+            <p><strong>Dato Curioso:</strong> j-hope es conocido no solo por su habilidad como rapero y bailarín en BTS,
+                sino también por su talento como compositor y productor. Su estilo en solitario combina elementos de
+                hip-hop, pop y electrónica, mostrando su capacidad para experimentar con diferentes géneros y estilos
+                musicales. Además, es conocido por su energía positiva y su compromiso con el bienestar de sus fans.</p>
+            <iframe class="video" src="https://www.youtube.com/embed/pEOcNV-b_tM"></iframe>
+        </div>
+
+        <div id="Domingo" class="tab-content">
+            <h2>Domingo - 21 de julio de 2024</h2>
+            <p><strong>Título:</strong> MILK OF THE SIREN</p>
+            <p><strong>Autor:</strong> Melanie Martinez</p>
+            <p><strong>Dato Curioso:</strong> "Milk of the Siren" está inspirada en mitos y leyendas marinas. El título
+                hace referencia a la leche de las sirenas, una idea que aparece en diversas culturas y leyendas como
+                símbolo de vida y misterio. Hana usa esta imagen para explorar temas de transformación y el poder
+                enigmático de la naturaleza.</p>
+            <iframe class="video" src="https://www.youtube.com/embed/PytZs2ePxQw"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function openDay(evt, dayName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(dayName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Abre la pestaña por defecto
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música favorita de mi semana</title>
+</head>
+
+<body>
+    <h1 class="centrado">Música de la semana</h1>
+    <p>Disfruta de las mejores recomendaciones para ti esta semana :)</p>
+    <img width=410
+        src="https://cdn.dribbble.com/users/441326/screenshots/3165191/media/45c2723efdf8be2140ff43913cbe8a3f.gif"
+        alt="GIF de música">
+    </header>
+
+    <section>
+        <div class="dia">
+            <h2>Otra vez a darle al Lunes: Where Is My Mind?</h2>
+            <p><strong>Artista:</strong> Pixies</p>
+            <p><strong>Datos Curiosos:</strong> "Where Is My Mind?" es una canción de la banda de rock alternativo
+                Pixies, lanzada en 1988. Es conocida por su aparición en la película "Fight Club".</p>
+            <a href="https://www.youtube.com/watch?v=I8oSH-qmYYg" target="_blank">Ver video</a>
+        </div>
+
+        <div class="dia">
+            <h2>Martes: The Night We Nearly Got Busted</h2>
+            <p><strong>Artista:</strong> The Bonnevilles</p>
+            <p><strong>Datos Curiosos:</strong> The Bonnevilles son conocidos por su estilo garage punk blues. Esta
+                canción es una muestra de su crudo y enérgico sonido.</p>
+            <a href="https://www.youtube.com/watch?v=3r7QnJhtp9g" target="_blank">Ver video</a>
+        </div>
+
+        <div class="dia">
+            <h2>Miércoles: Lo Que Un Día Fue No Será</h2>
+            <p><strong>Artista:</strong> José José</p>
+            <p><strong>Datos Curiosos:</strong> Esta balada es una de las canciones más emblemáticas de José José,
+                conocido como "El Príncipe de la Canción".</p>
+            <a href="https://www.youtube.com/watch?v=UoTZuKRKU8k" target="_blank">Ver video</a>
+        </div>
+
+        <div class="dia">
+            <h2>Jueves: Hate You</h2>
+            <p><strong>Artista:</strong> 2NE1</p>
+            <p><strong>Datos Curiosos:</strong> 2NE1 fue un grupo de chicas surcoreano que revolucionó el K-pop con su
+                estilo único y su actitud audaz.</p>
+            <a href="https://www.youtube.com/watch?v=NB5jyYD2WEw" target="_blank">Ver video</a>
+        </div>
+
+        <div class="dia">
+            <h2>Viernes: Ojos Noche</h2>
+            <p><strong>Artista:</strong> Little Jesus</p>
+            <p><strong>Datos Curiosos:</strong> Little Jesus es una banda mexicana de rock alternativo conocida por su
+                sonido fresco y líricas introspectivas.</p>
+            <a href="https://www.youtube.com/watch?v=Q3sTf6XI5bY" target="_blank">Ver video</a>
+        </div>
+
+        <div class="dia">
+            <h2>Sábado: Cigarette</h2>
+            <p><strong>Artista:</strong> The Smith Street Band</p>
+            <p><strong>Datos Curiosos:</strong> The Smith Street Band es una banda australiana de punk rock conocida por
+                sus canciones sinceras y enérgicas.</p>
+            <a href="https://www.youtube.com/watch?v=44mbyw7c-U4" target="_blank">Ver video</a>
+        </div>
+
+        <div class="dia">
+            <h2>Domingo: Skin and Bones</h2>
+            <p><strong>Artista:</strong> Foo Fighters</p>
+            <p><strong>Datos Curiosos:</strong> "Skin and Bones" es una de las canciones acústicas más populares de Foo
+                Fighters, conocida por su emotiva interpretación.</p>
+            <a href="https://www.youtube.com/watch?v=Zp9HUfNe6pc" target="_blank">Ver video</a>
+        </div>
+    </section>
+
+    <p>NOS VEMOS LA ROXIMA SEMANA CON MAS RECOMENDACIONES</p>
+</body>
+
+</html> -->
