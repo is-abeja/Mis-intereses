@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="https://tecnolochicas.mx/" target="_blank">
+            <img id=logo width=700 src="https://tecnolochicas.mx/public/images/tecnolochicas-logo.png"
+                alt="logo imagen tecno">
+        </a>
+    </header>
+
+    <mean>
+        <h1>Contacto</h1>
+        <form action="">
+            <div>
+                <label for="name">Nombre completo:</label>
+                <input id="nombre" name="nombre" placeholder="Maria Ramirez Hernandez" required type="text">
+            </div>
+
+            <div>
+                <label for="email">Correo electrónico:</label>
+                <input id="email" placeholder="mariarh@gmail.com" required type="email">
+                <label for="text">Número de teléfono:</label>
+                <input type="text" name="number" id="telefono" placeholder="+52 222 222 2222" >
+            </div>
+
+            <div>
+                <label for="date">Fecha de nacimiento:</label>
+                <input id="nacimiento" required type="date">
+            </div>
+
+            <div>
+                <label for="epoca-favorita">Estación favorita del año:</label>
+                <input list="estaciones" id="epoca-favorita" name="epoca-favorita">
+                <datalist id="estaciones">
+                    <option value="Primavera">
+                    <option value="Verano">
+                    <option value="Otoño">
+                    <option value="Invierno">
+                </datalist>
+            </div>
+        </form>
+    </mean>
+
+    <footer>
+        <h5>Hecho por Isabel <b>tecnolochicaspro</b>.</h5>
+        <h5>Gracias por contactarnos</h5>
+        <h6>
+            <a href="index.html">Página principal</a>
+        </h6>
+    </footer>
+
+</body>
+
+</html>
