@@ -10,7 +10,6 @@ La página es responsiva (adaptable a diferentes tamaños de pantalla) e incluye
 
 
 ## Secciones de mi sitio
-Tomar fotos del portafolio
 ![Introducción](assets/1.png)
 ![Música recomendada por dia](assets/2.png)
 ![Contacto](assets/3.png)
